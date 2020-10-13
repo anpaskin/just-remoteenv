@@ -1,14 +1,9 @@
 {
     "containerEnv": {
-        "CONTAINER_PATH": "${localenv:PATH}",
-        "CONTAINER_PATH_CAMEL": "${localEnv:PATH}",
-        "CONTAINER_PATH_ENV": "${env:PATH}"
+        "CONTAINER_PATH": "${localenv:PATH}"
     },
     
     "remoteEnv": {
-        "TEST": "yep!",
-        "REMOTE_PATH": "${localenv:PATH}",
-        "REMOTE_PATH_CAMEL": "${localEnv:PATH}",
-        "REMOTE_PATH_ENV": "${env:PATH}"
+        "TEST": "yep!"
     }
 }
