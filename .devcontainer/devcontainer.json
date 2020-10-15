@@ -3,7 +3,7 @@
         "CONTAINER_TEST": "Hey!",
         "CONTAINER_PATH": "${localenv:PATH}",
         "CONTAINER_PATH_CAMEL": "${localEnv:PATH}",
-        "CONTAINER_PATH_ENV": "${env:PATH}"
+        "CONTAINER_PATH_ENV": "${env:PATH}",
         "CONTAINER_TO_CONTAINER": "${containerEnv:CONTAINER_TEST}"
     },
     
