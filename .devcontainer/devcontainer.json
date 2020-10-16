@@ -4,7 +4,8 @@
         "CONTAINER_PATH": "${localenv:PATH}",
         "CONTAINER_PATH_CAMEL": "${localEnv:PATH}",
         "CONTAINER_PATH_ENV": "${env:PATH}",
-        "CONTAINER_TO_CONTAINER": "${containerEnv:CONTAINER_TEST}"
+        "CONTAINER_TO_CONTAINER": "${containerEnv:CONTAINER_TEST}",
+        "CONTAINER_HOME": "${localEnv:HOME}"
     },
     
     "remoteEnv": {
@@ -13,8 +14,10 @@
         "REMOTE_PATH_CAMEL": "${localEnv:PATH}",
         "REMOTE_PATH_ENV": "${env:PATH}",
         "REMOTE_TO_CONTAINER_PATH": "${containerEnv:CONTAINER_PATH}",
-        "REMOTE_TO_TEST": "${CONTAINER_TEST}",
+        "REMOTE_TO_TEST": "${containerEnv:CONTAINER_TEST}",
         "REMOTE_TO_CONTAINER_TO_CONTAINER": "${containerEnv:CONTAINER_TO_CONTAINER}",
-        "REMOTE_FALSE": "${containerEnv:BLAH}"
+        "REMOTE_FALSE": "${containerEnv:BLAH}",
+        "REMOTE_HOME": "${localEnv:HOME}",
+        "REMOTE_TO_CONTAINER_HOME": "${containerEnv:CONTAINER_HOME}"
     }
 }
