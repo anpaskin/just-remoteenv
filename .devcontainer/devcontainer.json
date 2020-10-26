@@ -1,4 +1,11 @@
 {   
+    "containerEnv": {
+        "CONTAINER_PATH": "${env:PATH}",
+        "CONTAINER_TEST": "yep from container",
+        "CONTAINER_TO_CONTAINER": "${containerEnv:CONTAINER_PATH}",
+        "CONTAINER_USER": "${localEnv:USER}"
+    },
+    
     "remoteEnv": {
         "TEST": "yep!",
         "REMOTE_PATH": "${localenv:PATH}",
